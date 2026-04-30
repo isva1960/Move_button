@@ -22,23 +22,57 @@ class Ui_MainWindow(object):
         self.pushB_yes = QtWidgets.QPushButton(self.centralwidget)
         self.pushB_yes.setGeometry(QtCore.QRect(130, 80, 101, 31))
         font = QtGui.QFont()
-        font.setPointSize(10)
+        font.setPointSize(11)
         font.setBold(True)
         font.setWeight(75)
         self.pushB_yes.setFont(font)
+        self.pushB_yes.setStyleSheet("QPushButton {\n"
+"    border-radius: 10px;\n"
+"    background-color: red;\n"
+"    color: white;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    border-radius: 10px;\n"
+"    background-color: red;\n"
+"    color: white;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    border-radius: 10px;\n"
+"    background-color: red;\n"
+"    color: white;\n"
+"}")
         self.pushB_yes.setObjectName("pushB_yes")
         self.pushB_no = QtWidgets.QPushButton(self.centralwidget)
         self.pushB_no.setGeometry(QtCore.QRect(260, 80, 101, 31))
         font = QtGui.QFont()
-        font.setPointSize(10)
+        font.setPointSize(11)
         font.setBold(True)
         font.setWeight(75)
         self.pushB_no.setFont(font)
+        self.pushB_no.setStyleSheet("QPushButton {\n"
+"    border-radius: 10px;\n"
+"    background-color: #3db39e;\n"
+"    color: white;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    border-radius: 10px;\n"
+"    background-color: #3ca492;\n"
+"    color: white;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    border-radius: 10px;\n"
+"    background-color: #3d9888;\n"
+"    color: white;\n"
+"}")
         self.pushB_no.setObjectName("pushB_no")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(80, 20, 335, 16))
+        self.label.setGeometry(QtCore.QRect(60, 20, 385, 18))
         font = QtGui.QFont()
-        font.setPointSize(10)
+        font.setPointSize(11)
         font.setBold(True)
         font.setWeight(75)
         self.label.setFont(font)

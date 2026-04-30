@@ -37,10 +37,29 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>11</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-radius: 10px;
+	background-color: red;
+	color: white;
+}
+
+QPushButton:hover {
+	border-radius: 10px;
+	background-color: red;
+	color: white;
+}
+
+QPushButton:pressed {
+	border-radius: 10px;
+	background-color: red;
+	color: white;
+}</string>
     </property>
     <property name="text">
      <string>Да</string>
@@ -57,10 +76,29 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>11</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border-radius: 10px;
+	background-color: #3db39e;
+	color: white;
+}
+
+QPushButton:hover {
+	border-radius: 10px;
+	background-color: #3ca492;
+	color: white;
+}
+
+QPushButton:pressed {
+	border-radius: 10px;
+	background-color: #3d9888;
+	color: white;
+}</string>
     </property>
     <property name="text">
      <string>Нет</string>
@@ -69,15 +107,15 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>60</x>
       <y>20</y>
-      <width>335</width>
-      <height>16</height>
+      <width>385</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <pointsize>11</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>

@@ -14,7 +14,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.y_pushB_yes = self.pushB_yes.geometry().y()
         self.number_of_movements = 0
 
-    def on_button_hover(self, event):
+    def on_button_hover(self, _event):
         # Измените положение кнопки случайным образом
         self.number_of_movements += 1
         if self.number_of_movements <= 9:
@@ -22,6 +22,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             y = random.randint(self.y_pushB_yes + self.pushB_yes.height(), self.height() - self.pushB_yes.height())
             self.pushB_yes.move(x, y)
         else:
+            self.pushB_yes.setStyleSheet(
+                "border-radius: 10px; background-color: #3db39e;color: white; background-color: #3db39e;")
             self.pushB_yes.move(self.x_pushB_yes, self.y_pushB_yes)
 
     def on_button_yes(self):
